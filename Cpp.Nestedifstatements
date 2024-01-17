@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main() {
+
+	char input1;
+	char input2;
+
+	cout << "Do you like Italian or Mexican? I/M" << endl;
+	cin >> input1;
+	
+
+	if (input1 == 'I') {
+		cout << "Do you like pizza or pasta? Z/P" << endl;
+		cin >> input2;
+		if (input2 == 'Z')
+			cout << "I recommend Marco's Pizza!" << endl;
+		else if (input2 == 'P')
+			cout << "I recommend Olive garden!" << endl;
+	}
+	else if (input1 == 'M')
+		cout << "Do you like Tacos or Burritos? T/B" << endl;
+		cin >> input2;
+		if (input2 == 'T')
+		cout << "I recommend Taqueria Columbine! Pretty far tho" << endl;
+		else if (input2 == 'B')
+			cout << "I recommend Señor Burritos! Also pretty far...." << endl;
+}
